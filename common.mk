@@ -228,6 +228,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.hardware_keystore.xml \
     android.hardware.security.keymint-V1-ndk.vendor \
+    android.hardware.security.keymint-V2-ndk.vendor \
+    android.hardware.security.rkp-V3-ndk.vendor \
     android.hardware.security.secureclock-V1-ndk.vendor \
     android.hardware.security.sharedsecret-V1-ndk.vendor
 
@@ -365,7 +367,8 @@ PRODUCT_PACKAGES += \
 # Trusted User Interface
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
-    vendor.qti.hardware.systemhelper@1.0.vendor
+    vendor.qti.hardware.systemhelper@1.0.vendor \
+    android.frameworks.cameraservice.service@2.0.vendor
 
 # USB
 PRODUCT_PACKAGES += \
