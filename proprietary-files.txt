@@ -85,6 +85,7 @@ vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/lib_SoundAlive_play_plus_ver500.so
 vendor/lib/lib_SoundBooster_ver1100.so
+vendor/lib/librecordalive.so
 vendor/lib/libadm.so
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
@@ -119,6 +120,7 @@ vendor/lib64/libFlacSwDec.so
 vendor/lib64/libPeripheralStateUtils.so
 vendor/lib64/libadm.so
 vendor/lib64/libar-acdb.so
+vendor/lib64/librecordalive.so
 vendor/lib64/libar-gpr.so
 -vendor/lib64/libar-gsl.so
 -vendor/lib64/libar-pal.so
@@ -205,6 +207,8 @@ vendor/lib64/lib_bt_ble.so
 vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
+vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
+vendor/lib64/hw/vendor.qti.hardware.bttpi-impl.so
 
 # Bluetooth (A2DP)
 vendor/etc/vintf/manifest/bluetooth_audio.xml
@@ -465,6 +469,7 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
+vendor/lib64/libmeminfo.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
@@ -916,6 +921,11 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+vendor/lib64/libhermes_cred.so
+vendor/lib64/libkeymaster4support.so
+vendor/lib64/libkeymaster4_1support.so
 
 # Media
 system_ext/lib/libmmosal.so
@@ -1353,3 +1363,7 @@ vendor/bin/pktlogconf
 vendor/etc/wifi/indoorchannel.info
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+#missing blobs
+vendor/lib/libsec2imageformatfilter.so
+vendor/lib64/libsec2imageformatfilter.so
