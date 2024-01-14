@@ -55,6 +55,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
 
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/persistantLogging.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/persistantLogging.rc \
+
+
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
@@ -90,6 +95,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.7.vendor \
     android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device-V1-ndk.vendor \
+    android.hardware.camera.metadata-V1-ndk.vendor \
+    android.hardware.camera.provider-V1-ndk.vendor \
     libcamera2ndk_vendor \
     vendor.qti.hardware.camera.aon@1.3.vendor \
     vendor.qti.hardware.camera.postproc@1.0.vendor
@@ -161,6 +169,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-V2-ndk.vendor
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
@@ -209,7 +219,9 @@ PRODUCT_PACKAGES += \
 
 # Keymaster
 PRODUCT_PACKAGES += \
+    android.hardware.identity-V4-ndk.vendor \
     android.hardware.keymaster@4.1.vendor \
+    android.hardware.security.keymint-V2-ndk.vendor \
     libkeymaster_messages.vendor
 
 # Keymint
@@ -306,6 +318,15 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio-V1-ndk.vendor \
+    android.hardware.radio.config-V1-ndk.vendor \
+    android.hardware.radio.data-V1-ndk.vendor \
+    android.hardware.radio.messaging-V1-ndk.vendor \
+    android.hardware.radio.modem-V1-ndk.vendor \
+    android.hardware.radio.network-V1-ndk.vendor \
+    android.hardware.radio.sim-V1-ndk.vendor \
+    android.hardware.radio.voice-V1-ndk.vendor \
+    android.system.net.netd@1.1.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
     secril_config_svc
