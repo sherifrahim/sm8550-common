@@ -636,6 +636,32 @@ vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/libsdmdal.so
 vendor/lib/libsdmdal.so
 
+#Display (QDCM)
+vendor/etc/display/qdcm_calib_data_DM1_LX83118_CM002.json
+vendor/etc/display/qdcm_calib_data_DM1_S6E3FAC_AMB606AW01.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_Sharp_qhd_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_nt36672e_lcd_video_mode_dsi_novatek_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_cmd_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_r66451_amoled_video_mode_dsi_visionox_panel_without_DSC.json
+vendor/etc/display/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/qdcm_calib_data_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.json
+vendor/etc/display/backlight_calib_r66451_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_r66451_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_cmd_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_qsync_video_mode_dsi_visionox_panel_with_DSC.xml
+vendor/etc/display/backlight_calib_vtdr6130_amoled_video_mode_dsi_visionox_panel_with_DSC.xml
+
 # Display (Postprocessing)
 vendor/bin/ppd
 vendor/lib64/libdisp-aba.so
@@ -925,11 +951,15 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libspcom.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
+vendor/bin/vendor.samsung.hardware.security.fkeymaster-service
+vendor/etc/vintf/manifest/vendor.samsung.hardware.security.fkeymaster-service.xml
+vendor/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc
+vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
+vendor/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk.so
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
-vendor/lib64/libhermes_cred.so
-vendor/lib64/libkeymaster4support.so
-vendor/lib64/libkeymaster4_1support.so
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 
 # Media
 system_ext/lib/libmmosal.so
@@ -1003,6 +1033,14 @@ vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
+
+#MdmHelper
+vendor/bin/mdm_helper
+vendor/bin/mdm_helper_proxy
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_usagsm.bin
+vendor/etc/plmn_se13.bin
 
 # Memtrack
 vendor/bin/hw/vendor.qti.hardware.memtrack-service
@@ -1371,3 +1409,5 @@ vendor/etc/wifi/wpa_supplicant_overlay.conf
 #missing blobs
 vendor/lib/libsec2imageformatfilter.so
 vendor/lib64/libsec2imageformatfilter.so
+vendor/lib/libsfplugin_ccodec_utils.so
+vendor/lib64/libsfplugin_ccodec_utils.so
