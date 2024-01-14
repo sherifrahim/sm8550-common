@@ -55,11 +55,14 @@ while [ "${#}" -gt 0 ]; do
 done
 
 if [ -z "${SRC}" ]; then
-    SRC="adb"
+    SRC="/home/j0sh1x/s23stock/mount"
 fi
 
 function blob_fixup() {
     case "${1}" in
+            vendor/bin/hw/android.hardware.security.keymint-service)
+            ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
+            ;;
     esac
 }
 
