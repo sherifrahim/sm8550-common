@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/kalama/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama/audio_effects.xml \
     $(LOCAL_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml \
     $(LOCAL_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml
+    $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
+    $(LOCAL_PATH)/audio/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 
 
 PRODUCT_COPY_FILES += \
@@ -207,7 +208,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.qcom.usb.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
 
@@ -244,7 +244,8 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor \
-    libpalclient
+    libpalclient \
+    android.hardware.media.c2@1.2.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
@@ -364,17 +365,20 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0 \
-    android.hardware.thermal@2.0.vendor
+    android.hardware.thermal@2.0.vendor \
+    android.frameworks.cameraservice.service@2.0.vendor \
+    android.frameworks.cameraservice.service@2.1.vendor
 
 # Trusted User Interface
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor \
-    vendor.qti.hardware.systemhelper@1.0.vendor \
-    android.frameworks.cameraservice.service@2.0.vendor
+    vendor.qti.hardware.systemhelper@1.0.vendor
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti
+    android.hardware.usb@1.3-service-qti \
+    init.qcom.usb.rc \
+    init.qcom.usb.sh
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc
@@ -394,6 +398,10 @@ PRODUCT_COPY_FILES += \
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
+
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
 
 # WiFi
 PRODUCT_PACKAGES += \
