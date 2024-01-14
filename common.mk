@@ -200,12 +200,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
+    init.mdm.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
     init.qcom.sh \
     init.recovery.qcom.rc \
     init.target.rc \
+    init.qcom.usb.rc \
     ueventd-odm.rc \
     ueventd.qcom.rc
 

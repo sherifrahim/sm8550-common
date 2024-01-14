@@ -73,6 +73,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.qcom.usb.rc",
+    src: "init.qcom.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "ueventd-odm.rc",
     filename: "ueventd.rc",
     src: "ueventd-odm.rc",
@@ -89,6 +96,12 @@ prebuilt_etc {
 sh_binary {
     name: "init.class_main.sh",
     src: "init.class_main.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.mdm.sh",
+    src: "init.mdm.sh",
     vendor: true,
 }
 
