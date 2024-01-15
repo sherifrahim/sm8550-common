@@ -103,8 +103,8 @@ TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8550-modules
 BOARD_USES_METADATA_PARTITION := true
 
 # Root
-# BOARD_ROOT_EXTRA_FOLDERS := \
-#     optics \
+ BOARD_ROOT_EXTRA_FOLDERS := \
+      efs \
 #     prism \
 
 # Partitions
