@@ -339,6 +339,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
+    android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal
 
