@@ -239,6 +239,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.samsung.sm8550
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -411,7 +415,7 @@ PRODUCT_COPY_FILES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     android.hardware.wifi.hostapd@1.0.vendor \
     hostapd \
     libwpa_client \
