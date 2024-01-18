@@ -209,7 +209,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd-odm.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.qti.ufs.rc
 
 PRODUCT_PACKAGES += \
     init.samsung.bsp.rc \
@@ -378,8 +379,12 @@ PRODUCT_PACKAGES += \
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3-service-qti \
-    init.qcom.usb.rc \
-    init.qcom.usb.sh
+ #   init.qcom.usb.rc \
+ #   init.qcom.usb.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.qcom.usb.scamsung.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.usb.rc \
+     $(LOCAL_PATH)/init/init.qcom.usb.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.qcom.usb.sh \
 
 PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/usb/etc

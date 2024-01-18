@@ -183,6 +183,7 @@ ro.soc.manufacturer=QTI
 
 # USB
 sys.usb.mtp.batchcancel=1
+sys.usb.controller=a600000.dwc3
 vendor.usb.controller=a600000.dwc3
 vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
