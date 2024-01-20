@@ -1,4 +1,4 @@
-service vendor.light-default /vendor/bin/hw/android.hardware.light-service.samsung
+service vendor.light-default /vendor/bin/hw/android.hardware.light-service.samsung.sm8550
     class hal
     user system
     group system
