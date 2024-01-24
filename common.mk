@@ -148,7 +148,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm-service.clearkey
-
+    
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
@@ -219,7 +219,8 @@ PRODUCT_PACKAGES += \
     init.samsung.display.rc \
     init.samsung.dp.rc \
     init.samsung.power.rc \
-    init.samsung.rc
+    init.samsung.rc \
+    vendor.samsung.rilchip.qcom.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
