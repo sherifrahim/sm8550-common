@@ -148,10 +148,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
     android.hardware.drm-service.clearkey
-    
+
 # Fastboot
 PRODUCT_PACKAGES += \
     fastbootd
+
+# Faceunlock
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.face-V2-ndk.vendor
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.3-service.samsung.sm8550 \
+    android.hardware.biometrics.fingerprint-V2-ndk.vendor \
+    android.hardware.biometrics.common-V2-ndk.vendor
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -346,6 +359,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librmnetctl \
     secril_config_svc
+
+# Secureelement
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
