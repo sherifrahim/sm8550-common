@@ -232,8 +232,7 @@ PRODUCT_PACKAGES += \
     init.samsung.display.rc \
     init.samsung.dp.rc \
     init.samsung.power.rc \
-    init.samsung.rc \
-    vendor.samsung.rilchip.qcom.rc
+    init.samsung.rc
 
 # Keymaster
 PRODUCT_PACKAGES += \
