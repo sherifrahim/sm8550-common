@@ -293,6 +293,13 @@ PRODUCT_SOONG_NAMESPACES += \
     kernel/samsung/sm8550 \
     kernel/samsung/sm8550-modules
 
+# Nfc
+PRODUCT_PACKAGES += \
+    init.nfc.samsung.rc \
+    android.hardware.nfc@1.0.vendor \
+    android.hardware.nfc@1.1.vendor \
+    android.hardware.nfc@1.2.vendor
+
 # Net
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor
@@ -361,7 +368,9 @@ PRODUCT_PACKAGES += \
 
 # Secureelement
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.0.vendor
+    android.hardware.secure_element@1.0.vendor \
+    android.hardware.secure_element@1.1.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
