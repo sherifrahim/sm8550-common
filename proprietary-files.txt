@@ -148,6 +148,7 @@ vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 -vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
+vendor/etc/init/init.audio.samsung.rc
 
 # Audio AGM
 -vendor/lib/libagm.so
@@ -156,6 +157,43 @@ vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio configs
+vendor/etc/audio/sku_kalama/audio_effects.conf
+vendor/etc/audio/sku_kalama/audio_effects.xml
+vendor/etc/audio/sku_kalama/mixer_paths.xml
+vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml
+vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml
+vendor/etc/audio/sku_kalama/mixer_paths_kalama_grd.xml
+vendor/etc/audio/sku_kalama/mixer_paths_kalama_mtp.xml
+vendor/etc/audio/sku_kalama/mixer_paths_kalama_qrd.xml
+vendor/etc/audio/sku_kalama/resourcemanager.xml
+vendor/etc/audio/sku_kalama/resourcemanager_kalama_cdp.xml
+vendor/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml
+vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml
+vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml
+vendor/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml
+vendor/etc/a2dpsink_audio_policy_configuration.xml
+vendor/etc/audio_effects.xml
+vendor/etc/audio_effects_haptic.xml
+vendor/etc/audio_effects_sec.xml
+vendor/etc/audio_effects_spatializer.xml
+vendor/etc/audio_policy_configuration.xml
+vendor/etc/audio_policy_configuration_base.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/bluetooth_audio_policy_configuration.xml
+vendor/etc/bluetooth_qti_audio_policy_configuration.xml
+vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
+vendor/etc/dax3_media_codecs_dolby_audio.xml
+vendor/etc/hearing_aid_audio_policy_configuration.xml
+vendor/etc/media_codecs_c2_audio.xml
+vendor/etc/media_codecs_dolby_audio.xml
+vendor/etc/media_codecs_google_audio.xml
+vendor/etc/media_codecs_google_c2_audio.xml
+vendor/etc/media_codecs_vendor_audio.xml
+vendor/etc/r_submix_audio_policy_configuration.xml
+vendor/etc/sec_audio_volume_curve.xml
+vendor/etc/situation_audio_policy_volumes_sec.xml
+vendor/etc/usb_audio_policy_configuration.xml
+
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_grd.xml
@@ -881,11 +919,8 @@ vendor/lib/libfidoauthnr_v2.so
 vendor/lib64/libfidoauthnr_v2.so
 
 # Fingerprint
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/init.fingerprint.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint-service.xml
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
 vendor/lib/libqfp_sensortest.so
@@ -1117,6 +1152,8 @@ system_ext/lib64/libmmosal.so
 system_ext/lib64/libmmparser_lite.so
 vendor/bin/hw/vendor.qti.media.c2@1.0-service
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
+vendor/bin/hw/samsung.software.media.c2@1.0-service
+vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
@@ -1227,7 +1264,14 @@ vendor/lib64/libqnnengine.so
 
 # NFC
 vendor/etc/libnfc-nxp.conf
+vendor/etc/libese-nxp.conf
 vendor/lib64/ese_spi_nxp.so
+vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
+vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
+vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
+vendor/etc/nfc/libnfc-nxp_RF.conf
+vendor/lib64/nfc_nci_nxpsn.so
+vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 
 # NFC firmware
 vendor/firmware/nfc/libsn220u_fw.so
@@ -1437,6 +1481,15 @@ vendor/lib64/libscveObjectSegmentation_stub.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
+# Secure Element
+vendor/lib64/android.hardware.secure_element@1.0.so
+vendor/lib64/android.hardware.secure_element@1.1.so
+vendor/lib64/android.hardware.secure_element@1.2.so
+vendor/bin/hw/android.hardware.secure_element@1.2-service
+vendor/etc/init/android.hardware.secure_element@1.2-service.rc
+vendor/lib64/libchrome.so
+
+
 # SMC Invoke
 vendor/etc/ssg/ta_config.json
 vendor/lib64/libminkdescriptor.so
@@ -1533,6 +1586,8 @@ vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/thermal-engine.conf
 -vendor/lib64/libthermalclient.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib64/libhypervintf.so
+vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
 
 # Time services
 vendor/app/TimeService/TimeService.apk
@@ -1642,3 +1697,21 @@ vendor/lib64/libsmartfocus.uniplugin@1.0.so
 vendor/lib64/libssengine.uniplugin@1.0.so
 vendor/lib64/libvdis.uniplugin@1.0.so
 vendor/lib64/libvideobeauty_capture.uniplugin@1.0.so
+
+# MissingBlobs
+
+vendor/lib/librapidscorer.so
+vendor/lib64/librapidscorer.so
+vendor/lib/libsaped.so
+vendor/lib64/libsaped.so
+vendor/lib/libzoomroi.samsung.so
+vendor/lib64/libzoomroi.samsung.so
+vendor/lib/libheifcapture.so
+vendor/lib/libstagefright_foundation_vendor.so
+vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk.so
+vendor/lib64/libheifcapture.so
+vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
+vendor/lib64/libstagefright_foundation_vendor.so
+vendor/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk.so
+vendor/lib64/libzoomroi_lite.samsung.so
+vendor/lib64/libfrc.quram.so
