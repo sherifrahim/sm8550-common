@@ -39,6 +39,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioData/slot1</fqname>
+        <fqname>IRadioData/slot2</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio.deprecated</name>
@@ -52,6 +53,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioMessaging/slot1</fqname>
+        <fqname>IRadioMessaging/slot2</fqname>
     </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.radio.modem</name>
@@ -61,6 +63,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioModem/slot1</fqname>
+        <fqname>IRadioModem/slot2</fqname>
     </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.radio.network</name>
@@ -70,6 +73,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioNetwork/slot1</fqname>
+        <fqname>IRadioNetwork/slot2</fqname>
     </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.radio.sim</name>
@@ -79,6 +83,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioSim/slot1</fqname>
+        <fqname>IRadioSim/slot2</fqname>
     </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.radio.voice</name>
@@ -88,6 +93,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>IRadioVoice/slot1</fqname>
+        <fqname>IRadioVoice/slot2</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.am</name>
@@ -151,6 +157,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>ISehRadioBridge/slot1</fqname>
+        <fqname>ISehRadioBridge/slot2</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.radio.channel</name>
@@ -174,6 +181,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>ISehRadioData/slot1</fqname>
+        <fqname>ISehRadioData/slot2</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.radio.messaging</name>
@@ -183,6 +191,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>ISehRadioMessaging/slot1</fqname>
+        <fqname>ISehRadioMessaging/slot2</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.radio.network</name>
@@ -192,6 +201,7 @@
             <instance>slot2</instance>
         </interface>
         <fqname>ISehRadioNetwork/slot1</fqname>
+        <fqname>ISehRadioNetwork/slot2</fqname>
     </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.radio.sim</name>
@@ -201,5 +211,6 @@
             <instance>slot2</instance>
         </interface>
         <fqname>ISehRadioSim/slot1</fqname>
+        <fqname>ISehRadioSim/slot2</fqname>
     </hal>
 </manifest>

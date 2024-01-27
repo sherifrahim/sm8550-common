@@ -118,6 +118,14 @@
         </interface>
    </hal>
    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <version>2</version>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+   </hal>
+   <hal format="aidl" optional="true">
         <name>android.hardware.light</name>
         <version>1</version>
         <interface>
@@ -133,28 +141,4 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.AGMIPC</name>
-        <version>1.0</version>
-        <interface>
-            <name>IAGM</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
-        <name>vendor.samsung.hardware.bluetooth.audio</name>
-        <version>1</version>
-        <interface>
-            <name>ISehBluetoothAudioProviderFactory</name>
-            <instance>default</instance>
-        </interface>
-   </hal>
-    <hal format="hidl" optional="true">
-        <name>vendor.samsung.hardware.nfc</name>
-        <version>2.0</version>
-        <interface>
-            <name>ISehNfc</name>
-            <instance>default</instance>
-        </interface>
-   </hal>
 </compatibility-matrix>
