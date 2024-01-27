@@ -66,6 +66,12 @@ function blob_fixup() {
             ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
             ;;
     esac
+    case "${1}" in
+        vendor/lib64/hw/gatekeeper.mdfpp.so)
+            # Replace libcrypto with vndk33 libcrypto
+            ${PATCHELF} --replace-needed libcrypto.so libcrypto-v33.so "${2}"
+            ;;
+    esac
 }
 
 if [ -z "${ONLY_TARGET}" ]; then
