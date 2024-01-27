@@ -294,6 +294,10 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
 
 bool BiometricsFingerprint::openHal() {
     void* handle = dlopen("libbauthserver.so", RTLD_NOW);
+
+    if (!handle){
+        handle = dlopen("libsfp_sensor.so", RTLD_NOW);
+    }
     if (handle) {
         int err;
 
