@@ -157,8 +157,6 @@ vendor/etc/init/init.audio.samsung.rc
 -vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
 # Audio configs
-vendor/etc/audio/sku_kalama/audio_effects.conf
-vendor/etc/audio/sku_kalama/audio_effects.xml
 vendor/etc/audio/sku_kalama/mixer_paths.xml
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml
@@ -170,18 +168,14 @@ vendor/etc/audio/sku_kalama/resourcemanager_kalama_cdp.xml
 vendor/etc/audio/sku_kalama/resourcemanager_kalama_grd.xml
 vendor/etc/audio/sku_kalama/resourcemanager_kalama_mtp.xml
 vendor/etc/audio/sku_kalama/resourcemanager_kalama_qrd.xml
-vendor/etc/audio/sku_kalama_qssi/audio_policy_configuration.xml
 vendor/etc/a2dpsink_audio_policy_configuration.xml
 vendor/etc/audio_effects.xml
 vendor/etc/audio_effects_haptic.xml
 vendor/etc/audio_effects_sec.xml
 vendor/etc/audio_effects_spatializer.xml
-vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_configuration_base.xml
 vendor/etc/audio_policy_volumes.xml
-vendor/etc/bluetooth_audio_policy_configuration.xml
 vendor/etc/bluetooth_qti_audio_policy_configuration.xml
-vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml
 vendor/etc/dax3_media_codecs_dolby_audio.xml
 vendor/etc/hearing_aid_audio_policy_configuration.xml
 vendor/etc/media_codecs_c2_audio.xml
@@ -189,10 +183,8 @@ vendor/etc/media_codecs_dolby_audio.xml
 vendor/etc/media_codecs_google_audio.xml
 vendor/etc/media_codecs_google_c2_audio.xml
 vendor/etc/media_codecs_vendor_audio.xml
-vendor/etc/r_submix_audio_policy_configuration.xml
 vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/situation_audio_policy_volumes_sec.xml
-vendor/etc/usb_audio_policy_configuration.xml
 
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp.xml
 vendor/etc/audio/sku_kalama/mixer_paths_kalama_cdp_wsa883x.xml
@@ -1147,7 +1139,6 @@ vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/bin/init.qti.media.sh
 vendor/etc/init/init.qti.media.rc
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/lib64/libcodec2_vndk.so
 vendor/etc/media_kalama/video_system_specs.json
@@ -1282,6 +1273,7 @@ vendor/lib64/libperipheral_client.so
 vendor/bin/hw/vendor.qti.hardware.perf-hal-service
 vendor/etc/init/poweropt-service.rc
 vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml
 vendor/etc/lm/prekill/prekill_2GB.data
 vendor/etc/lm/prekill/prekill_4GB.data
 vendor/etc/lm/prekill/prekill_6GB.data
