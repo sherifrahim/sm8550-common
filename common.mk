@@ -266,9 +266,8 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.2.vendor:64 \
     libmm-omxcore \
     libpalclient \
-    android.hardware.media.c2@1.2.vendor \
-    vendor.qti.media.c2audio@1.0-service.rc
-
+    android.hardware.media.c2@1.2.Vendor
+    
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \

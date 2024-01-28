@@ -5,6 +5,7 @@
 #
 
 LOCAL_PATH := $(call my-dir)
+include $(call all-subdir-makefiles)
 
 ifneq ($(filter dm1q dm2q dm3q,$(TARGET_DEVICE)),)
 
