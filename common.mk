@@ -440,6 +440,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
+# Vibration
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-V2-ndk.vendor
+
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
