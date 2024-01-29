@@ -156,10 +156,10 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.face-V2-ndk.vendor
 
 # Fingerprint
-#PRODUCT_PACKAGES += \
-#    android.hardware.biometrics.fingerprint@2.3-service.samsung.sm8550 \
-#    android.hardware.biometrics.fingerprint-V2-ndk.vendor \
-#    android.hardware.biometrics.common-V2-ndk.vendor
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung \
+    android.hardware.biometrics.fingerprint-V2-ndk.vendor \
+    android.hardware.biometrics.common-V2-ndk.vendor
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \

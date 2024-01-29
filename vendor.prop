@@ -98,6 +98,11 @@ vendor.gralloc.disable_ubwc=0
 # DRM
 drm.service.enabled=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=udfps
+ro.vendor.fingerprint.sensor_location=540|1739|91
+ro.vendor.fingerprint.request_touch_event=true
+
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
