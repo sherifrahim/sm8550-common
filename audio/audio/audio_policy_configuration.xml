@@ -489,13 +489,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </module>
 
        <!-- A2DP Audio HAL -->
-       <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration.xml"/>
+       <xi:include href="/vendor/etc/a2dp_in_audio_policy_configuration_7_0.xml"/>
 
         <!-- Usb Audio HAL -->
         <xi:include href="/vendor/etc/usb_audio_policy_configuration.xml"/>
 
         <!-- Remote Submix Audio HAL -->
-        <xi:include href="/vendor/etc/r_submix_audio_policy_configuration_7_0.xml"/>
+        <xi:include href="/vendor/etc/r_submix_audio_policy_configuration.xml"/>
 
         <!-- Bluetooth Audio HAL -->
         <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration_7_0.xml"/>
