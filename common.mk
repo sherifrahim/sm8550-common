@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0.vendor \
-    android.hardware.health@2.1.vendor
+    android.hardware.health@2.1.vendor \
+    android.hardware.health-service.samsung
 
 # Hotword enrollment
 PRODUCT_COPY_FILES += \
@@ -424,7 +425,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.3-service-qti \
+    android.hardware.usb-service.samsung\
  #   init.qcom.usb.rc \
  #   init.qcom.usb.sh
 

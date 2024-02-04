@@ -1043,12 +1043,6 @@ vendor/lib64/libxtadapter.so
 vendor/lib64/vendor.qti.gnss-service.so
 vendor/lib64/vendor.samsung.hardware.gnss-V2-ndk_platform.so
 
-# Health
-vendor/bin/hw/vendor.samsung.hardware.health-service
-vendor/etc/init/vendor.samsung.hardware.health-service.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.health-service.xml
-vendor/lib64/vendor.samsung.hardware.health-V1-ndk.so
-
 # Hotword Enrollment
 product/priv-app/HotwordEnrollmentOKGoogleEx4HEXAGON/HotwordEnrollmentOKGoogleEx4HEXAGON.apk
 product/priv-app/HotwordEnrollmentXGoogleEx4HEXAGON/HotwordEnrollmentXGoogleEx4HEXAGON.apk
