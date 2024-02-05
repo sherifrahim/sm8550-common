@@ -338,7 +338,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power-service-qti.samsung \
     android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.3.vendor \
     android.hardware.power-V2-ndk_platform.vendor \
@@ -386,7 +386,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors-service.multihal \
+    android.hardware.sensors-service.samsung-multihal \
     android.frameworks.sensorservice@1.0.vendor \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal
@@ -425,7 +425,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.samsung\
+    android.hardware.usb-service.samsung \
  #   init.qcom.usb.rc \
  #   init.qcom.usb.sh
 
