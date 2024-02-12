@@ -1104,11 +1104,6 @@ vendor/lib64/libdsms_vendor.so
 vendor/lib64/libhwvault.so
 vendor/lib64/libshctrl.so
 
-# DRK
-vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
-vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
-vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
-
 # Media
 system_ext/lib/libmmosal.so
 system_ext/lib/libmmparser_lite.so
